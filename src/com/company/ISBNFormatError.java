@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+
 public class ISBNFormatError {
 
     public boolean chekcISBN(String isbn){
@@ -13,4 +15,22 @@ public class ISBNFormatError {
 
         return checker;
     }
+
+    public boolean checkLength(String isbn){
+
+        return false;
+    }
+
+    public boolean checkDuplicates(String isbn, ArrayList<Book> bookArrayList){
+        boolean duplicate = false;
+        for (Book b : bookArrayList) {
+            if(isbn.equalsIgnoreCase(b.getISBN())){
+                duplicate = true;
+            }
+        }
+
+        return duplicate;
+    }
+
+
 }

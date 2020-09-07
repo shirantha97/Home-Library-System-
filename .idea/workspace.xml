@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="033b2a0b-d4df-48f9-88dd-40d8afcda465" name="Default Changelist" comment="" />
+    <list default="true" id="033b2a0b-d4df-48f9-88dd-40d8afcda465" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booklist" beforeDir="false" afterPath="$PROJECT_DIR$/booklist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/BookList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/BookList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/ISBNFormatError.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/ISBNFormatError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/BookList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/BookList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ISBNFormatError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ISBNFormatError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,13 +28,18 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1hB96tgJaAykfPlw3XquMR5KepX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -32,6 +51,11 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shira\IdeaProjects\untitled\src" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -60,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599473446016</updated>
-      <workItem from="1599473447836" duration="7357000" />
+      <workItem from="1599473447836" duration="13207000" />
     </task>
     <servers />
   </component>
@@ -72,29 +96,64 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="447" y="167" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1599478016271" />
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1599475923267">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1599484242940">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599475923267" />
-    <state width="1323" height="392" key="GridCell.Tab.0.bottom" timestamp="1599480743639">
+    <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599484242940" />
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom" timestamp="1599486595295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="392" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599480743639" />
-    <state width="1323" height="392" key="GridCell.Tab.0.center" timestamp="1599480743638">
+    <state width="1323" height="249" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599486595295" />
+    <state width="1323" height="249" key="GridCell.Tab.0.center" timestamp="1599486595295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="392" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599480743638" />
-    <state width="1323" height="392" key="GridCell.Tab.0.left" timestamp="1599480743637">
+    <state width="1323" height="249" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599486595295" />
+    <state width="1323" height="249" key="GridCell.Tab.0.left" timestamp="1599486595295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="392" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599480743637" />
-    <state width="1323" height="392" key="GridCell.Tab.0.right" timestamp="1599480743639">
+    <state width="1323" height="249" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599486595295" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right" timestamp="1599486595295">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="392" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599480743639" />
+    <state width="1323" height="249" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599486595295" />
+    <state width="1323" height="249" key="GridCell.Tab.1.bottom" timestamp="1599486595125">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="249" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599486595125" />
+    <state width="1323" height="249" key="GridCell.Tab.1.center" timestamp="1599486595125">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="249" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1599486595125" />
+    <state width="1323" height="249" key="GridCell.Tab.1.left" timestamp="1599486595125">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="249" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1599486595125" />
+    <state width="1323" height="249" key="GridCell.Tab.1.right" timestamp="1599486595125">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="249" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1599486595125" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1599476004433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599476004433" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/com/company/ISBNFormatError.java</url>
+          <line>23</line>
+          <properties class="com.company.ISBNFormatError" method="checkDuplicates">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Library.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

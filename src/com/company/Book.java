@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Book implements Serializable {
     private String title, author, year;
-    private int ISBN;
+    private String ISBN;
 
     public String getTitle() {
         return title;
@@ -26,11 +26,11 @@ public class Book implements Serializable {
         this.year = year;
     }
 
-    public int getISBN() {
+    public String getISBN() {
         return ISBN;
     }
 
-    public void setISBN(int ISBN) {
+    public void setISBN(String ISBN) {
         this.ISBN = ISBN;
     }
 

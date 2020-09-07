@@ -5,19 +5,14 @@ import java.util.ArrayList;
 
 public class BookList {
 
-//    private ArrayList<Book> listofBooks;
-    ArrayList<Book> addedBooks = new ArrayList<Book>();
+    ArrayList<Book> loadBooks;
 
 
     BookList(){
-        addedBooks  = new ArrayList<>();
+        loadBooks  = new ArrayList<>();
     }
 
-    public void addtoList(Book book){
-        addedBooks.add(book);
-    }
-
-    public void serializelist(){
+    public void serializelist(ArrayList<Book> addedBooks){
         try
         {
             FileOutputStream fos = new FileOutputStream("booklist");
@@ -32,14 +27,14 @@ public class BookList {
         }
     }
 
-    public void deserializelist(){
+    public ArrayList<Book> deserializelist(){
 
         try
         {
             FileInputStream fis = new FileInputStream("booklist");
             ObjectInputStream ois = new ObjectInputStream(fis);
 
-            addedBooks = (ArrayList) ois.readObject();
+            loadBooks = (ArrayList) ois.readObject();
 
             ois.close();
             fis.close();
@@ -47,19 +42,14 @@ public class BookList {
         catch (IOException ioe)
         {
             ioe.printStackTrace();
-            return;
         }
         catch (ClassNotFoundException c)
         {
             System.out.println("Class not found");
             c.printStackTrace();
-            return;
         }
 
-        System.out.println("\nPreviously added books to tbe library");
-        for (Book b : addedBooks) {
-            System.out.println(b);
-        }
+        return loadBooks;
 
     }
 }
