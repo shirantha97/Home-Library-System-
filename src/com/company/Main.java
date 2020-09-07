@@ -1,4 +1,5 @@
 package com.company;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -31,10 +32,44 @@ public class Main {
             lib.addBooks(author, title, year, isbn);
 
         }
-        else if(option.equalsIgnoreCase("2")){
+        else if(option.equalsIgnoreCase("3")){
+            System.out.println("Please select the preferred method");
+            System.out.println("1. Title \n"
+                    + "2. Author \n" + "3. Year of Publication\n" + "4. ISBN number\n");
+            String searchOption = myObj.nextLine();
+            String searchQuery = "";
+            if (searchOption.equalsIgnoreCase("1")){
+                System.out.println("Enter the title");
+                searchQuery = myObj.nextLine();
+            }
+            else if (searchOption.equalsIgnoreCase("2")){
+                System.out.println("Enter the Author");
+                searchQuery = myObj.nextLine();
+            }
+            else if (searchOption.equalsIgnoreCase("3")){
+                System.out.println("Enter the Year of Publication");
+                searchQuery = myObj.nextLine();
+            }
+            else if (searchOption.equalsIgnoreCase("4")){
+                System.out.println("Enter the ISBN");
+                searchQuery = myObj.nextLine();
+            }
+
+            ArrayList<Book> searchList = lib.searchBooks(searchQuery, searchOption);
+            if (!searchList.isEmpty()){
+                for (Book book : searchList){
+                    System.out.println("\nTitle : \t" + book.getTitle());
+                    System.out.println("Author : \t" + book.getAuthor());
+                    System.out.println("Published Year : \t" + book.getYear());
+                    System.out.println("ISBN : \t" + book.getISBN());
+                }
+            }else {
+                System.out.println("There is no books available under that title");
+            }
+
 
         }
-        else if(option.equalsIgnoreCase("3")){
+        else if(option.equalsIgnoreCase("2")){
 
         }
         else if(option.equalsIgnoreCase("4")){

@@ -12,13 +12,15 @@ public class ISBNFormatError {
         }else{
             checker = false;
         }
-
         return checker;
     }
 
     public boolean checkLength(String isbn){
-
-        return false;
+        boolean len = false;
+        if (isbn.length() > 10){
+            len = true;
+        }
+        return len;
     }
 
     public boolean checkDuplicates(String isbn, ArrayList<Book> bookArrayList){
@@ -28,9 +30,6 @@ public class ISBNFormatError {
                 duplicate = true;
             }
         }
-
         return duplicate;
     }
-
-
 }
