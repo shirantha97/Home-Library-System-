@@ -47,12 +47,17 @@ public class Main {
                 searchQuery = myObj.nextLine();
             }
             else if (searchOption.equalsIgnoreCase("3")){
-                System.out.println("Enter the Year of Publication");
-                searchQuery = myObj.nextLine();
+                do {
+                    System.out.println("Enter the Year of Publication");
+                    searchQuery = myObj.nextLine();
+                } while (searchQuery.length() < 4);
             }
             else if (searchOption.equalsIgnoreCase("4")){
-                System.out.println("Enter the ISBN");
-                searchQuery = myObj.nextLine();
+                String regex = "[0-9]+";
+                do {
+                    System.out.println("Enter the ISBN");
+                    searchQuery = myObj.nextLine();
+                }while (searchQuery.length() <10 || !searchQuery.matches(regex));
             }
 
             ArrayList<Book> searchList = lib.searchBooks(searchQuery, searchOption);
@@ -60,7 +65,7 @@ public class Main {
                 for (Book book : searchList){
                     System.out.println("\nTitle : \t" + book.getTitle());
                     System.out.println("Author : \t" + book.getAuthor());
-                    System.out.println("Published Year : \t" + book.getYear());
+                    System.out.println("Year : \t" + book.getYear());
                     System.out.println("ISBN : \t" + book.getISBN());
                 }
             }else {
@@ -73,7 +78,13 @@ public class Main {
 
         }
         else if(option.equalsIgnoreCase("4")){
-
+            ArrayList<Book> allBooks = lib.displayAll();
+            for(Book book:allBooks){
+                System.out.println("\nTitle : \t" + book.getTitle());
+                System.out.println("Author : \t" + book.getAuthor());
+                System.out.println("Year : \t" + book.getYear());
+                System.out.println("ISBN : \t" + book.getISBN());
+            }
         }
         else if(option.equalsIgnoreCase("5")){
             lib.exitfromLibrary();

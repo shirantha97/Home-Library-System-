@@ -18,30 +18,36 @@ public class Library {
     }
 
     public void addBooks(String author, String title, String year, String isbn) {
-        book.setAuthor(author);
-        book.setISBN(isbn);
-        book.setTitle(title);
-        book.setYear(year);
+        if(!(author.length() ==0) && !(title.length() ==0) && !((year.length()) ==0) && !(isbn.length() ==0)){
+            book.setAuthor(author);
+            book.setISBN(isbn);
+            book.setTitle(title);
+            book.setYear(year);
 
-        boolean checker = isbnFormatError.chekcISBN(isbn);
-        boolean duplicate = isbnFormatError.checkDuplicates(isbn, addedBooks);
-        boolean length = isbnFormatError.checkLength(isbn);
+            boolean checker = isbnFormatError.chekcISBN(isbn);
+            boolean duplicate = isbnFormatError.checkDuplicates(isbn, addedBooks);
+            boolean length = isbnFormatError.checkLength(isbn);
 
-        if (!checker) {
-            System.out.println("ISBN can only contain digits from 0-9");
+            if (!checker) {
+                System.out.println("ISBN can only contain digits from 0-9");
+            }
+            if (duplicate) {
+                System.out.println("A book with the ISBN already exists");
+            }
+            if (length) {
+                System.out.println("ISBN can only contain a mximum of 10 digits only");
+            }
+
+            if (checker && !length && !duplicate) {
+                System.out.println(title + "\t was added to the library");
+                addedBooks.add(book);
+                bookList.serializelist(addedBooks);
+            }
         }
-        if (duplicate) {
-            System.out.println("A book with the ISBN already exists");
-        }
-        if (length) {
-            System.out.println("ISBN can only contain a mximum of 10 digits only");
+        else {
+           System.out.println("You can not leave fields empty");
         }
 
-        if (checker && !length && !duplicate) {
-            System.out.println(title + "\t was added to the library");
-            addedBooks.add(book);
-            bookList.serializelist(addedBooks);
-        }
     }
 
     public ArrayList<Book> searchBooks(String query, String type) {
@@ -75,36 +81,11 @@ public class Library {
         return searchresults;
     }
 
-//
-//    public ArrayList<Book> searchByAuthor(String author) {
-//        ArrayList<Book> searchresults = new ArrayList<Book>();
-//        for (Book b : addedBooks) {
-//            if (author.equalsIgnoreCase(b.getAuthor().toString())) {
-//                searchresults.add(b);
-//            }
-//        }
-//        return searchresults;
-//    }
-//
-//    public ArrayList<Book> searchByYear(String year) {
-//        ArrayList<Book> searchresults = new ArrayList<Book>();
-//        for (Book b : addedBooks) {
-//            if (year.equalsIgnoreCase(b.getYear().toString())) {
-//                searchresults.add(b);
-//            }
-//        }
-//        return searchresults;
-//    }
-//
-//    public ArrayList<Book> searchByISBN(String isbn) {
-//        ArrayList<Book> searchresults = new ArrayList<Book>();
-//        for (Book b : addedBooks) {
-//            if (isbn.equalsIgnoreCase(b.getYear().toString())) {
-//                searchresults.add(b);
-//            }
-//        }
-//        return searchresults;
-//    }
+    public ArrayList<Book> displayAll() {
+        return addedBooks;
+    }
+
+
 
     public void exitfromLibrary () {
         bookList.serializelist(addedBooks);
