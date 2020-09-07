@@ -85,7 +85,16 @@ public class Library {
         return addedBooks;
     }
 
+    public void deleteBook(String title){
+        if (addedBooks.removeIf(b -> title.equalsIgnoreCase(b.getTitle()))){
+            bookList.serializelist(addedBooks);
+            System.out.println(title +" has been removed from the library");
+        }else {
+            System.out.println("Please enter the correct details of the books to be deleted");
+        }
 
+
+    }
 
     public void exitfromLibrary () {
         bookList.serializelist(addedBooks);
@@ -94,9 +103,9 @@ public class Library {
     public void loadlibrary () {
         addedBooks = bookList.deserializelist();
         System.out.println("\nPreviously added books to tbe library");
-        for (Book b : addedBooks) {
-            System.out.println(b);
-        }
+//        for (Book b : addedBooks) {
+//            System.out.println(b);
+//        }
     }
 
 }

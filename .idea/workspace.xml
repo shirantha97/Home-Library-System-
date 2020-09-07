@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="033b2a0b-d4df-48f9-88dd-40d8afcda465" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/booklist" beforeDir="false" afterPath="$PROJECT_DIR$/booklist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/HomeScreen.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/Library.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/HomeScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/SearchBooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
@@ -32,6 +35,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -77,7 +84,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599473446016</updated>
-      <workItem from="1599473447836" duration="22674000" />
+      <workItem from="1599473447836" duration="24168000" />
+      <workItem from="1599499832863" duration="3495000" />
     </task>
     <servers />
   </component>
@@ -85,6 +93,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599499850664">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599499850664" />
     <state x="447" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599478016271">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -93,41 +105,49 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599484242940" />
-    <state width="1323" height="454" key="GridCell.Tab.0.bottom" timestamp="1599498071714">
+    <state width="1323" height="70" key="GridCell.Tab.0.bottom" timestamp="1599503365742">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="454" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599498071714" />
-    <state width="1323" height="454" key="GridCell.Tab.0.center" timestamp="1599498071714">
+    <state width="1323" height="70" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599503365742" />
+    <state width="1323" height="70" key="GridCell.Tab.0.center" timestamp="1599503365741">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="454" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599498071714" />
-    <state width="1323" height="454" key="GridCell.Tab.0.left" timestamp="1599498071714">
+    <state width="1323" height="70" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599503365741" />
+    <state width="1323" height="70" key="GridCell.Tab.0.left" timestamp="1599503365741">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="454" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599498071714" />
-    <state width="1323" height="454" key="GridCell.Tab.0.right" timestamp="1599498071714">
+    <state width="1323" height="70" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599503365741" />
+    <state width="1323" height="70" key="GridCell.Tab.0.right" timestamp="1599503365741">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="454" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599498071714" />
-    <state width="1323" height="235" key="GridCell.Tab.1.bottom" timestamp="1599496562272">
+    <state width="1323" height="70" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599503365741" />
+    <state width="1323" height="235" key="GridCell.Tab.1.bottom" timestamp="1599499722346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599496562272" />
-    <state width="1323" height="235" key="GridCell.Tab.1.center" timestamp="1599496562271">
+    <state width="1323" height="235" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599499722346" />
+    <state width="1323" height="235" key="GridCell.Tab.1.center" timestamp="1599499722346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1599496562271" />
-    <state width="1323" height="235" key="GridCell.Tab.1.left" timestamp="1599496562271">
+    <state width="1323" height="235" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1599499722346" />
+    <state width="1323" height="235" key="GridCell.Tab.1.left" timestamp="1599499722346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1599496562271" />
-    <state width="1323" height="235" key="GridCell.Tab.1.right" timestamp="1599496562271">
+    <state width="1323" height="235" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1599499722346" />
+    <state width="1323" height="235" key="GridCell.Tab.1.right" timestamp="1599499722346">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1599496562271" />
+    <state width="1323" height="235" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1599499722346" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1599476004433">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599476004433" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1599499832343">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1599499832343" />
+    <state x="387" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1599503348733">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="387" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1599503348733" />
   </component>
 </project>

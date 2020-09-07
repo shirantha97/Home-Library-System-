@@ -7,16 +7,20 @@ public class Main {
     public static void main(String[] args) {
 
         Library lib = new Library();
+        SearchBooks searchBooks = new SearchBooks();
 
         lib.loadlibrary();
 
         Scanner myObj = new Scanner(System.in);
+        String option = "5";
 
-        System.out.println("## Welcome to the Home Library System ##");
-        System.out.println("Please select one of the following options:");
+
+        do {
+        System.out.println("\n## Welcome to the Home Library System ##");
+        System.out.println("\nPlease select one of the following options:");
         System.out.println("1. Add a new book \n"
                     + "2. Delete a book \n" + "3. Search for a book\n" + "4. Display all books\n" + "5. Exit\n");
-        String option = myObj.nextLine();
+        option = myObj.nextLine();
 
         if (option.equalsIgnoreCase("1")){
             System.out.println("Enter the following Details");
@@ -33,34 +37,8 @@ public class Main {
 
         }
         else if(option.equalsIgnoreCase("3")){
-            System.out.println("Please select the preferred method");
-            System.out.println("1. Title \n"
-                    + "2. Author \n" + "3. Year of Publication\n" + "4. ISBN number\n");
-            String searchOption = myObj.nextLine();
-            String searchQuery = "";
-            if (searchOption.equalsIgnoreCase("1")){
-                System.out.println("Enter the title");
-                searchQuery = myObj.nextLine();
-            }
-            else if (searchOption.equalsIgnoreCase("2")){
-                System.out.println("Enter the Author");
-                searchQuery = myObj.nextLine();
-            }
-            else if (searchOption.equalsIgnoreCase("3")){
-                do {
-                    System.out.println("Enter the Year of Publication");
-                    searchQuery = myObj.nextLine();
-                } while (searchQuery.length() < 4);
-            }
-            else if (searchOption.equalsIgnoreCase("4")){
-                String regex = "[0-9]+";
-                do {
-                    System.out.println("Enter the ISBN");
-                    searchQuery = myObj.nextLine();
-                }while (searchQuery.length() <10 || !searchQuery.matches(regex));
-            }
-
-            ArrayList<Book> searchList = lib.searchBooks(searchQuery, searchOption);
+            System.out.println("Search for a book by:");
+            ArrayList<Book> searchList = searchBooks.searchItems(lib);
             if (!searchList.isEmpty()){
                 for (Book book : searchList){
                     System.out.println("\nTitle : \t" + book.getTitle());
@@ -71,24 +49,46 @@ public class Main {
             }else {
                 System.out.println("There is no books available under that title");
             }
-
-
         }
         else if(option.equalsIgnoreCase("2")){
-
+            System.out.println("Search for a book for deletion by:");
+            ArrayList<Book> searchList = searchBooks.searchItems(lib);
+            if (!searchList.isEmpty()){
+                for (Book book : searchList){
+                    System.out.println("\nTitle : \t" + book.getTitle());
+                    System.out.println("Author : \t" + book.getAuthor());
+                    System.out.println("Year : \t" + book.getYear());
+                    System.out.println("ISBN : \t" + book.getISBN());
+                }
+                System.out.print("Enter the title of the book to delete: \t");
+                String deleteQuery = myObj.nextLine();
+                lib.deleteBook(deleteQuery);
+            }else {
+                System.out.println("There is no books available under that title");
+            }
         }
         else if(option.equalsIgnoreCase("4")){
             ArrayList<Book> allBooks = lib.displayAll();
-            for(Book book:allBooks){
-                System.out.println("\nTitle : \t" + book.getTitle());
-                System.out.println("Author : \t" + book.getAuthor());
-                System.out.println("Year : \t" + book.getYear());
-                System.out.println("ISBN : \t" + book.getISBN());
+            if (!allBooks.isEmpty()){
+                for(Book book:allBooks){
+                    System.out.println("\nTitle : \t" + book.getTitle());
+                    System.out.println("Author : \t" + book.getAuthor());
+                    System.out.println("Year : \t" + book.getYear());
+                    System.out.println("ISBN : \t" + book.getISBN());
+                }
+            }else {
+                System.out.println("There are no books available at the moment");
             }
+
         }
         else if(option.equalsIgnoreCase("5")){
             lib.exitfromLibrary();
         }
+
+        } while (!(option.equalsIgnoreCase("5")));
+
+        lib.exitfromLibrary();
+
     }
 
 }
