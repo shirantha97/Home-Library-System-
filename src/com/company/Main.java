@@ -89,6 +89,9 @@ public class Main {
         else if(option.equalsIgnoreCase("5")){
             lib.exitfromLibrary();
         }
+        else {
+            System.out.println("Please enter the correct option");
+        }
 
         } while (!(option.equalsIgnoreCase("5")));
 

@@ -52,9 +52,6 @@ public class BookList {
                 c.printStackTrace();
             }
         }
-
-
-
         return loadBooks;
 
     }

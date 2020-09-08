@@ -51,7 +51,7 @@ public class Library {
                 System.out.println("Please enter the details again");
             }
 
-            if (checker && length && !duplicate) {
+            if (checker && (!length) && !duplicate && yearCheck && (!yearlen)) {
                 System.out.println("\n"+ title + "\twas added to the library");
                 addedBooks.add(book);
                 bookList.serializelist(addedBooks);
