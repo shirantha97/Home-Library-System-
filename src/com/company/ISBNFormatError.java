@@ -23,13 +23,34 @@ public class ISBNFormatError {
         return len;
     }
 
-    public boolean checkDuplicates(String isbn, ArrayList<Book> bookArrayList){
+    public boolean checkDuplicates(Book book, ArrayList<Book> bookArrayList){
         boolean duplicate = false;
         for (Book b : bookArrayList) {
-            if(isbn.equalsIgnoreCase(b.getISBN())){
-                duplicate = true;
+            if(book.getISBN().equalsIgnoreCase(b.getISBN())){
+                if (!book.getTitle().equalsIgnoreCase(b.getTitle())){
+                    duplicate = true;
+                }
             }
         }
         return duplicate;
+    }
+
+    public boolean checkPublishYear(String year){
+        boolean checker;
+        String regex = "[0-9]+";
+        if (year.matches(regex)){
+            checker = true;
+        }else{
+            checker = false;
+        }
+        return checker;
+    }
+
+    public boolean checkYearLength(String year){
+        boolean len = false;
+        if (year.length() > 4){
+            len = true;
+        }
+        return len;
     }
 }

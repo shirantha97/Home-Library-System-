@@ -1,5 +1,7 @@
 package com.company;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
@@ -8,6 +10,7 @@ public class Main {
 
         Library lib = new Library();
         SearchBooks searchBooks = new SearchBooks();
+        ISBNFormatError isbnFormatError = new ISBNFormatError();
 
         lib.loadlibrary();
 
@@ -24,13 +27,13 @@ public class Main {
 
         if (option.equalsIgnoreCase("1")){
             System.out.println("Enter the following Details");
-            System.out.println("Enter the author's name: \t");
+            System.out.print("Enter the author's name: \t");
             String author = myObj.nextLine();
-            System.out.println("Enter the title of the book: \t");
+            System.out.print("Enter the title of the book: \t");
             String title = myObj.nextLine();
-            System.out.println("Enter the ISBN of the book: \t");
+            System.out.print("Enter the ISBN of the book: \t");
             String isbn = myObj.nextLine();
-            System.out.println("Enter the published year of the book: \t");
+            System.out.print("Enter the published year of the book: \t");
             String year = myObj.nextLine();
 
             lib.addBooks(author, title, year, isbn);
@@ -40,6 +43,7 @@ public class Main {
             System.out.println("Search for a book by:");
             ArrayList<Book> searchList = searchBooks.searchItems(lib);
             if (!searchList.isEmpty()){
+                searchList.sort(Comparator.comparing(Book::getTitle));
                 for (Book book : searchList){
                     System.out.println("\nTitle : \t" + book.getTitle());
                     System.out.println("Author : \t" + book.getAuthor());
@@ -70,6 +74,7 @@ public class Main {
         else if(option.equalsIgnoreCase("4")){
             ArrayList<Book> allBooks = lib.displayAll();
             if (!allBooks.isEmpty()){
+                Collections.sort(allBooks, Comparator.comparing(Book::getTitle));
                 for(Book book:allBooks){
                     System.out.println("\nTitle : \t" + book.getTitle());
                     System.out.println("Author : \t" + book.getAuthor());

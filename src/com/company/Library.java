@@ -25,21 +25,34 @@ public class Library {
             book.setYear(year);
 
             boolean checker = isbnFormatError.chekcISBN(isbn);
-            boolean duplicate = isbnFormatError.checkDuplicates(isbn, addedBooks);
+            boolean duplicate = isbnFormatError.checkDuplicates(book, addedBooks);
             boolean length = isbnFormatError.checkLength(isbn);
+            boolean yearCheck = isbnFormatError.checkPublishYear(year);
+            boolean yearlen = isbnFormatError.checkYearLength(year);
 
             if (!checker) {
-                System.out.println("ISBN can only contain digits from 0-9");
+                System.out.println("\nISBN can only contain digits from 0-9");
+                System.out.println("Please enter the details again");
             }
             if (duplicate) {
-                System.out.println("A book with the ISBN already exists");
+                System.out.println("\nA book with the ISBN already exists");
+                System.out.println("Please enter the details again");
             }
             if (length) {
-                System.out.println("ISBN can only contain a mximum of 10 digits only");
+                System.out.println("\nISBN can only contain a mximum of 10 digits only");
+                System.out.println("Please enter the details again");
+            }
+            if (yearlen) {
+                System.out.println("\nThe year of publication can only contain a mximum of 4 digits only");
+                System.out.println("Please enter the details again");
+            }
+            if (!yearCheck) {
+                System.out.println("\nThe year of publication can only contain digits");
+                System.out.println("Please enter the details again");
             }
 
-            if (checker && !length && !duplicate) {
-                System.out.println(title + "\t was added to the library");
+            if (checker && length && !duplicate) {
+                System.out.println("\n"+ title + "\twas added to the library");
                 addedBooks.add(book);
                 bookList.serializelist(addedBooks);
             }
@@ -103,9 +116,9 @@ public class Library {
     public void loadlibrary () {
         addedBooks = bookList.deserializelist();
         System.out.println("\nPreviously added books to tbe library");
-//        for (Book b : addedBooks) {
-//            System.out.println(b);
-//        }
+        for (Book b : addedBooks) {
+            System.out.println(b);
+        }
     }
 
 }
