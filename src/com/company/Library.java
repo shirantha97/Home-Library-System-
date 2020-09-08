@@ -110,15 +110,17 @@ public class Library {
     }
 
     public void exitfromLibrary () {
+        //save the arraylist of object to file
         bookList.serializelist(addedBooks);
     }
 
     public void loadlibrary () {
+        //deserrialize the file obtain a list of objects
         addedBooks = bookList.deserializelist();
-        System.out.println("\nPreviously added books to tbe library");
-        for (Book b : addedBooks) {
-            System.out.println(b);
-        }
+//        System.out.println("\nPreviously added books to tbe library");
+//        for (Book b : addedBooks) {
+//            System.out.println(b);
+//        }
     }
 
 }

@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="033b2a0b-d4df-48f9-88dd-40d8afcda465" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/BookList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/BookList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/ISBNFormatError.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/ISBNFormatError.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/Library.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/BookList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/BookList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
@@ -87,7 +82,7 @@
       <workItem from="1599473447836" duration="24168000" />
       <workItem from="1599499832863" duration="3852000" />
       <workItem from="1599573194170" duration="1882000" />
-      <workItem from="1599582752432" duration="9778000" />
+      <workItem from="1599582752432" duration="10813000" />
     </task>
     <servers />
   </component>
@@ -159,16 +154,5 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="387" y="257" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1366.728@0.0.1366.728" timestamp="1599503348733" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Library.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

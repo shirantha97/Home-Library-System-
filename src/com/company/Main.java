@@ -12,7 +12,7 @@ public class Main {
         SearchBooks searchBooks = new SearchBooks();
         ISBNFormatError isbnFormatError = new ISBNFormatError();
 
-        lib.loadlibrary();
+        lib.loadlibrary(); //load the previous written object of books
 
         Scanner myObj = new Scanner(System.in);
         String option = "5";
@@ -43,7 +43,7 @@ public class Main {
             System.out.println("Search for a book by:");
             ArrayList<Book> searchList = searchBooks.searchItems(lib);
             if (!searchList.isEmpty()){
-                searchList.sort(Comparator.comparing(Book::getTitle));
+                searchList.sort(Comparator.comparing(Book::getTitle)); //sort items alphabetically
                 for (Book book : searchList){
                     System.out.println("\nTitle : \t" + book.getTitle());
                     System.out.println("Author : \t" + book.getAuthor());
@@ -74,7 +74,7 @@ public class Main {
         else if(option.equalsIgnoreCase("4")){
             ArrayList<Book> allBooks = lib.displayAll();
             if (!allBooks.isEmpty()){
-                Collections.sort(allBooks, Comparator.comparing(Book::getTitle));
+                Collections.sort(allBooks, Comparator.comparing(Book::getTitle)); //sort items alphabetically
                 for(Book book:allBooks){
                     System.out.println("\nTitle : \t" + book.getTitle());
                     System.out.println("Author : \t" + book.getAuthor());
