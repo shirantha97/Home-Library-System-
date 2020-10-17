@@ -3,12 +3,17 @@ package com.company;
 import java.io.Serializable;
 
 public class Book implements Serializable {
-    private String title, author, year;
+    private String title, author, year, pages;
     private String ISBN;
 
     public String getTitle() {
         return title;
     }
+
+    public String getPages() {
+        return pages;
+    }
+
 
     public String getAuthor() {
         return author;
@@ -37,10 +42,14 @@ public class Book implements Serializable {
     public void setTitle(String title) {
         this.title = title;
     }
+    public void setPages(String pages) {
+        this.pages = pages;
+    }
+
 
 
     @Override
     public String toString() {
-        return "Book [title=" + title + ", author=" + author + ",  ISBN=" + ISBN + ", year="+ year +"]";
+        return "Book [title=" + title + ", author=" + author + ",  ISBN=" + ISBN + ", year="+ year + ",pages="+ pages +"]";
     }
 }

@@ -53,4 +53,11 @@ public class ISBNFormatError {
         }
         return len;
     }
+    public boolean checkPagesLength(String pages){
+        boolean len = false;
+        if (pages.length() > 4){
+            len = true;
+        }
+        return len;
+    }
 }

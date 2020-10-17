@@ -17,18 +17,20 @@ public class Library {
         isbnFormatError = new ISBNFormatError();
     }
 
-    public void addBooks(String author, String title, String year, String isbn) {
-        if(!(author.length() ==0) && !(title.length() ==0) && !((year.length()) ==0) && !(isbn.length() ==0)){
+    public void addBooks(String author, String title, String year, String isbn, String pages) {
+        if(!(author.length() ==0) && !(title.length() ==0) && !((year.length()) ==0) && !(isbn.length() ==0) && !(pages.length() ==0)){
             book.setAuthor(author);
             book.setISBN(isbn);
             book.setTitle(title);
             book.setYear(year);
+            book.setPages(pages);
 
             boolean checker = isbnFormatError.chekcISBN(isbn);
             boolean duplicate = isbnFormatError.checkDuplicates(book, addedBooks);
             boolean length = isbnFormatError.checkLength(isbn);
             boolean yearCheck = isbnFormatError.checkPublishYear(year);
             boolean yearlen = isbnFormatError.checkYearLength(year);
+            boolean pageslen = isbnFormatError.checkPagesLength(pages);
 
             if (!checker) {
                 System.out.println("\nISBN can only contain digits from 0-9");
@@ -39,11 +41,15 @@ public class Library {
                 System.out.println("Please enter the details again");
             }
             if (length) {
-                System.out.println("\nISBN can only contain a mximum of 10 digits only");
+                System.out.println("\nISBN can only contain a maaximum of 10 digits only");
                 System.out.println("Please enter the details again");
             }
             if (yearlen) {
-                System.out.println("\nThe year of publication can only contain a mximum of 4 digits only");
+                System.out.println("\nThe year of publication can only contain a maaximum of 4 digits only");
+                System.out.println("Please enter the details again");
+            }
+            if (pageslen) {
+                System.out.println("\nThe pages can only contain a maaximum of 4 digits only");
                 System.out.println("Please enter the details again");
             }
             if (!yearCheck) {
